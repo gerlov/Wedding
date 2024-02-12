@@ -2,6 +2,23 @@
 @import url(font-awesome.min.css);
 @import url("https://fonts.googleapis.com/css?family=Lobster|Open+Sans:300,400,600,700,800");
 
+
+@font-face {
+	font-family: 'Bellefair';
+	src: url('Bellefair-Regular.ttf')
+	format('truetype');
+	/* Add additional font styles if necessary */
+}
+
+@font-face {
+	font-family: 'BDS';
+	src: url('BDScript-Regular.ttf')
+	format('truetype');
+	/* Add additional font styles if necessary */
+}
+
+
+
 /*
 	Road Trip by TEMPLATED
 	templated.co @templatedco
@@ -15,9 +32,11 @@
 		padding: 0;
 		border: 0;
 		font-size: 100%;
-		font: inherit;
+		font-family: 'Bellefair';
 		vertical-align: baseline;
 	}
+
+
 .image.fit img {
 	width: 100%;
 	height: auto;
@@ -1616,15 +1635,10 @@
 /* Type */
 
 	body {
+
+
 		background-color: #1b1b1b;
 		color: rgba(255, 255, 255, 0.75);
-	}
-
-	body, input, select, textarea {
-		font-family: "Open Sans", Arial, Helvetica, sans-serif;
-		font-size: 13pt;
-		font-weight: 300;
-		line-height: 1.65;
 	}
 
 		@media screen and (max-width: 1680px) {
@@ -1634,6 +1648,7 @@
 			}
 
 		}
+
 
 		@media screen and (max-width: 1280px) {
 
@@ -1684,7 +1699,11 @@
 	}
 
 	p {
-		margin: 0 0 2em 0;
+		margin: 0 0 1em 0;
+		line-height: 1.5;
+		font-family: 'Bellefair';
+		font-size: 150%;
+		vertical-align: baseline;
 	}
 
 	h1, h2, h3, h4, h5, h6 {
@@ -1866,6 +1885,9 @@
 			}
 
 		}
+
+
+
 
 /* Button */
 
@@ -3360,6 +3382,7 @@
 				color: #fff;
 				font-weight: 600;
 				text-decoration: none;
+				font-family: 'Bellefair', serif;
 			}
 
 				#header .logo a:hover {
@@ -3370,6 +3393,7 @@
 				font-weight: 300;
 				font-size: .8em;
 				color: #FFF;
+				font-family: 'Bellefair', cursive;
 			}
 
 		#header > a {
@@ -3461,6 +3485,10 @@
 /* Menu */
 
 	#menu {
+
+		font-family: 'Bellefair', sans-serif;
+
+
 		-moz-transform: translateX(20em);
 		-webkit-transform: translateX(20em);
 		-ms-transform: translateX(20em);
@@ -3630,7 +3658,7 @@
 		#banner h1 {
 			font-size: 7em;
 			line-height: 1.1;
-			font-family: "Lobster", cursive;
+			font-family: "BDS", cursive;
 			margin-bottom: .25em;
 			color: rgba(255, 255, 255, 0.75);
 			text-shadow: -2px -2px 0 rgba(0, 0, 0, 0.125);
@@ -3639,7 +3667,8 @@
 
 		#banner p {
 			color: rgba(255, 255, 255, 0.85);
-			font-size: 1.75em;
+			font-size: 2.25em;
+			font-family: "BDS", cursive;
 		}
 
 	@-moz-keyframes more {
@@ -4152,7 +4181,7 @@
 		@media screen and (max-width: 480px) {
 
 			.post h2 {
-				font-size: 1.25em;
+				font-size: 2.25em;
 			}
 
 			.post .more {
@@ -4442,3 +4471,11 @@
 			}
 
 		}
+
+
+
+
+h1, h2 , h3 , h4, h5 , h6 {
+	font-family: 'BDS';
+	font-size: 350%;
+}

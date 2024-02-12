@@ -50,32 +50,32 @@
 </nav>
 
 <!-- Banner -->
-<section id="banner" class="bg-img" data-bg="frida7.jpg">
+<section id="banner" class="bg-img" data-bg="banner3.jpg">
     <div class="inner">
         <header>
-            <h1>
-                Ladda upp dina bilder!
-            </h1>
+            <h1>Bröllopspresenter</h1>
         </header>
     </div>
     <a href="#one" class="more">Learn More</a>
 </section>
 
 <!-- One -->
-<section id="one" class="wrapper post bg-img" data-bg="frida4.jpg">
+<section id="one" class="wrapper post bg-img" data-bg="Toast2.jpg">
     <div class="inner">
         <article class="box">
-            <div class="upload-link-container">
-                <p>Här nere kan du klicka för att ladda upp dina bästa bilder! </p>
-                <ul class="icons" style="text-align: center; list-style: none;">
-                    <li>
-                        <a href="https://forms.gle/BESscSJCfiEYVPGN8" target="_blank" class="icon round fa-cloud-upload">
-                        <span class="label">
-                            Upload Photos
-                        </span>
-                        </a>
-                    </li>
-                </ul>
+            <header>
+                <h2>Bröllopsregister</h2>
+                <p>2024-06-15</p>
+            </header>
+            <div class="content iframe-container">
+                <!-- Embed JotForm Iframe Here -->
+                <iframe id="JotFormIFrame-240323093843351"
+                        title="Wedding Gifts Registry" onload="window.parent.scrollTo(0,0)"
+                        allowtransparency="true"
+                        allowfullscreen="true"
+                        allow="geolocation; microphone; camera"
+                        src="https://form.jotform.com/240323093843351"
+                        scrolling="yes"></iframe>
             </div>
         </article>
     </div>
@@ -89,5 +89,21 @@
 <script type="text/javascript" src="assets/js/util.js"></script>
 <script type="text/javascript" src="assets/js/main.js"></script>
 
+<script>
+    // JavaScript code for adjusting the JotForm iframe height
+    var ifr = document.getElementById("JotFormIFrame-240323093843351");
+    if (ifr) {
+        var src = ifr.src;
+        var iframeParams = [];
+        if (window.location.href && window.location.href.indexOf("?") > -1) {
+            iframeParams = iframeParams.concat(window.location.href.substr(window.location.href.indexOf("?") + 1).split('&'));
+        }
+        if (src && src.indexOf("?") > -1) {
+            iframeParams = iframeParams.concat(src.substr(src.indexOf("?") + 1).split("&"));
+            src = src.substr(0, src.indexOf("?"));
+        }
+        iframeParams.push("isIframeEmbed=1");
+        ifr.src = src + "?" + iframeParams.join('&');
+</script>
 </body>
 </html>
