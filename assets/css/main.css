@@ -7,17 +7,31 @@
 	font-family: 'Bellefair';
 	src: url('Bellefair-Regular.ttf')
 	format('truetype');
-	/* Add additional font styles if necessary */
 }
 
 @font-face {
 	font-family: 'BDS';
 	src: url('BDScript-Regular.ttf')
 	format('truetype');
-	/* Add additional font styles if necessary */
 }
 
+@font-face {
+	font-family: 'OBL';
+	src: url('Oh Beloved.ttf')
+	format('truetype');
+}
 
+@font-face {
+	font-family: 'Mad';
+	src: url('Madalina.ttf')
+	format('truetype');
+}
+
+@font-face {
+	font-family: 'Ama';
+	src: url('Amadea.ttf')
+	format('truetype');
+}
 
 /*
 	Road Trip by TEMPLATED
@@ -32,7 +46,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 	padding: 0;
 	border: 0;
 	font-size: 100%;
-	font-family: 'Bellefair';
+	font-family: "Bellefair", serif;
 	vertical-align: baseline;
 }
 
@@ -2302,7 +2316,7 @@ textarea:invalid {
 .select-wrapper:before {
 	-moz-osx-font-smoothing: grayscale;
 	-webkit-font-smoothing: antialiased;
-	font-family: FontAwesome;
+	font-family: FontAwesome, serif;
 	font-style: normal;
 	font-weight: normal;
 	text-transform: none !important;
@@ -3658,7 +3672,7 @@ body.subpage {
 #banner h1 {
 	font-size: 7em;
 	line-height: 1.1;
-	font-family: "BDS", cursive;
+	font-family: "Ama", cursive;
 	margin-bottom: .25em;
 	color: rgba(255, 255, 255, 0.75);
 	text-shadow: -2px -2px 0 rgba(0, 0, 0, 0.125);
@@ -3668,7 +3682,7 @@ body.subpage {
 #banner p {
 	color: rgba(255, 255, 255, 0.85);
 	font-size: 2.25em;
-	font-family: "BDS", cursive;
+	font-family: "Ama", cursive;
 }
 
 @-moz-keyframes more {
@@ -4476,6 +4490,6 @@ body.is-loading #banner:before {
 
 
 h1, h2 , h3 , h4, h5 , h6 {
-	font-family: 'BDS';
+	font-family: 'BDS', sans-serif;
 	font-size: 350%;
 }
