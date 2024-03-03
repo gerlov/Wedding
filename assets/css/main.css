@@ -33,6 +33,13 @@
 	format('truetype');
 }
 
+
+@font-face {
+	font-family: 'BoP';
+	src: url('Birds of Paradise И PERSONAL USE ONLY.ttf')
+	format('truetype');
+}
+
 /*
 	Road Trip by TEMPLATED
 	templated.co @templatedco
@@ -3672,7 +3679,7 @@ body.subpage {
 #banner h1 {
 	font-size: 7em;
 	line-height: 1.1;
-	font-family: "Ama", cursive;
+	font-family: "BoP", cursive;
 	margin-bottom: .25em;
 	color: rgba(255, 255, 255, 0.75);
 	text-shadow: -2px -2px 0 rgba(0, 0, 0, 0.125);
@@ -3682,7 +3689,7 @@ body.subpage {
 #banner p {
 	color: rgba(255, 255, 255, 0.85);
 	font-size: 2.25em;
-	font-family: "Ama", cursive;
+	font-family: "BoP", cursive;
 }
 
 @-moz-keyframes more {
@@ -4490,6 +4497,75 @@ body.is-loading #banner:before {
 
 
 h1, h2 , h3 , h4, h5 , h6 {
-	font-family: 'BDS', sans-serif;
+	font-family: 'BoP', sans-serif;
 	font-size: 350%;
 }
+
+.custom-section {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	min-height: 100vh;
+	height: 100vh;
+	position: relative;
+	text-align: center;
+	overflow: hidden;
+}
+
+.custom-section:before {
+	content: '';
+	display: block;
+	background-color: #000;
+	height: 100%;
+	left: 0;
+	opacity: 0.45;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index: 1;
+	transition: opacity 3s ease;
+	transition-delay: 1.25s;
+}
+
+.custom-section .inner {
+	transform: scale(1.0);
+	transition: opacity 1s ease, transform 1s ease;
+	opacity: 1;
+	position: relative;
+	z-index: 2;
+}
+
+.custom-section .more {
+	transition: height 0.2s ease;
+	animation: more 0.75s ease-out 3s forwards;
+	background-color: rgba(255, 255, 255, 0.15);
+	border: 0;
+	border-radius: 100%;
+	bottom: -3em;
+	color: rgba(255, 255, 255, 0.75);
+	display: block;
+	height: 3em;
+	left: 50%;
+	margin-left: -1.5em;
+	overflow: hidden;
+	position: absolute;
+	text-indent: 3em;
+	white-space: nowrap;
+	width: 3em;
+	z-index: 2;
+	text-decoration: none;
+}
+
+.custom-section .more:before {
+	content: '\f107';
+	color: #FFF;
+	font-size: 2em;
+	position: absolute;
+	right: .425em;
+	bottom: -.075em;
+}
+
