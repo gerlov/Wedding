@@ -1,10 +1,6 @@
 <!DOCTYPE HTML>
-<!--
-    Road Trip by TEMPLATED
-    templated.co @templatedco
-    Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
--->
-<html>
+
+
 <head>
     <title>Bröllopspresenter</title>
     <meta charset="utf-8">
@@ -16,7 +12,8 @@
         .iframe-container {
             position: relative;
             overflow: hidden;
-            padding-top: 56.25%; /* 16:9 aspect ratio */
+            padding-top: 75%;
+
         }
 
         .iframe-container iframe {
@@ -25,6 +22,20 @@
             left: 0;
             width: 100%;
             height: 100%;
+            border-radius: 50px;
+            opacity: 0.8;
+        }
+
+        @media (max-width: 768px) {
+            .iframe-container {
+                overflow: hidden;
+                padding-top: 0/* Adjust this value for mobile devices to alter height */;
+                height: 70vh;
+            }
+            .iframe-container iframe {
+                /*width: 100%; !* You can keep this to maintain full width *!*/
+                height: 100%; /* Adjust height automatically */
+            }
         }
     </style>
 </head>
@@ -44,44 +55,54 @@
         <li><a href="index.html">Bröllopsdagen</a></li>
         <li><a href="osa.html">Svara på inbjudan</a></li>
         <li><a href="gifts.html">Bröllopsregister</a></li>
-        <li><a href="speach.html">Hålla tal</a></li>
-        <li><a href="pictures.html">Ladda upp bilder</a></li>
+<!--        <li><a href="speach.html">Hålla tal</a></li>-->
+<!--        <li><a href="pictures.html">Ladda upp bilder</a></li>-->
     </ul>
 </nav>
 
 <!-- Banner -->
-<section id="banner" class="bg-img" data-bg="frida7.jpg">
+<section id="banner" class="bg-img" data-bg="sid8.jpg">
     <div class="inner">
         <header>
             <h1>
                 OSA
             </h1>
         </header>
-    </div>
+        <div class="content iframe-container">
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf0_lYoYVfVQWC7YFS2rDkHgIqm0pRjljg2e-Dawv0YnRppsg/viewform?embedded=true"
+                    frameborder="0"
+                    marginheight="0"
+                    marginwidth="0"
+                    title="RSVP Form">
+                Loading…
+            </iframe>
+        </div>
 
+
+    </div>
+<!--    <a href="#one" class="more">Learn More</a>-->
 </section>
 
 <!-- One -->
-<section id="one" class="wrapper post bg-img" data-bg="Toast2.jpg">
-    <div class="inner">
-        <article class="box">
-            <header>
-                <h2>OSA senast 15e april</h2>
-                <p>2024-06-15</p>
-            </header>
-            <div class="content iframe-container">
-                <!-- Embed JotForm Iframe Here -->
-                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeO1mzPznNdJy9McIvTqwT12duWXBuMtaa0kxxE5VxX-bC2bw/viewform?embedded=true"
-                        frameborder="0"
-                        marginheight="0"
-                        marginwidth="0"
-                        title="RSVP Form">
-                    Loading…
-                </iframe>
-            </div>
-        </article>
-    </div>
-</section>
+<!--<section id="one" class="wrapper post bg-img" data-bg="sid8.jpg">-->
+<!--    <div class="inner">-->
+<!--        <article class="box">-->
+<!--            <header>-->
+<!--                <h2>Inbjudan</h2>-->
+<!--                <p>Svara senast 2024-04-15</p>-->
+<!--            </header>-->
+<!--            <div class="content iframe-container">-->
+<!--                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf0_lYoYVfVQWC7YFS2rDkHgIqm0pRjljg2e-Dawv0YnRppsg/viewform?embedded=true"-->
+<!--                        frameborder="0"-->
+<!--                        marginheight="0"-->
+<!--                        marginwidth="0"-->
+<!--                        title="RSVP Form">-->
+<!--                    Loading…-->
+<!--                </iframe>-->
+<!--            </div>-->
+<!--        </article>-->
+<!--    </div>-->
+<!--</section>-->
 
 
 <!-- Scripts -->

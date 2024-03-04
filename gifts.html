@@ -1,10 +1,6 @@
 <!DOCTYPE HTML>
-<!--
-    Road Trip by TEMPLATED
-    templated.co @templatedco
-    Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
--->
-<html>
+
+
 <head>
     <title>Bröllopspresenter</title>
     <meta charset="utf-8">
@@ -13,15 +9,32 @@
     <link rel="stylesheet" href="assets/css/main.css">
     <style>
         .iframe-container {
-            overflow: hidden; /* Hide everything that goes outside the container */
-            padding: 0;
-            border: none; /* Remove borders */
+            position: relative;
+            overflow: auto;
+            padding-top: 75%;
+
         }
+
         .iframe-container iframe {
-            border: none; /* Remove borders */
-            min-width: 100%;
-            max-width: 100%;
-            height: 539px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 50px;
+            opacity: 0.8;
+        }
+
+        @media (max-width: 768px) {
+            .iframe-container {
+                overflow: auto;
+                padding-top: 0/* Adjust this value for mobile devices to alter height */;
+                height: 70vh;
+            }
+            .iframe-container iframe {
+                /*width: 100%; !* You can keep this to maintain full width *!*/
+                height: 100%; /* Adjust height automatically */
+            }
         }
     </style>
 </head>
@@ -41,42 +54,61 @@
         <li><a href="index.html">Bröllopsdagen</a></li>
         <li><a href="osa.html">Svara på inbjudan</a></li>
         <li><a href="gifts.html">Bröllopsregister</a></li>
-        <li><a href="speach.html">Hålla tal</a></li>
-        <li><a href="pictures.html">Ladda upp bilder</a></li>
+<!--        <li><a href="speach.html">Hålla tal</a></li>-->
+<!--        <li><a href="pictures.html">Ladda upp bilder</a></li>-->
     </ul>
 </nav>
 
 <!-- Banner -->
-<section id="banner" class="bg-img" data-bg="banner3.jpg">
+<section id="banner" class="bg-img" data-bg="frida2.jpg">
     <div class="inner">
         <header>
-            <h1>Bröllopspresenter</h1>
+            <h1>
+                Bröllopspresenter
+            </h1>
         </header>
+        <div class="content iframe-container">
+            <!-- Embed JotForm Iframe Here -->
+            <iframe id="JotFormIFrame-240323093843351"
+                    title="Wedding Gifts Registry" onload="window.parent.scrollTo(0,0)"
+                    allowtransparency="true"
+                    allowfullscreen="true"
+                    allow="geolocation; microphone; camera"
+                    src="https://form.jotform.com/240323093843351"
+                    style="min-height:600px;">
+            </iframe>
+        </div>
+
+
+
+
+
     </div>
-    <a href="#one" class="more">Learn More</a>
+<!--    <a href="#one" class="more">Learn More</a>-->
 </section>
 
 <!-- One -->
-<section id="one" class="wrapper post bg-img" data-bg="Toast2.jpg">
-    <div class="inner">
-        <article class="box">
-            <header>
-                <h2>Bröllopsregister</h2>
-                <p>2024-06-15</p>
-            </header>
-            <div class="content iframe-container">
-                <!-- Embed JotForm Iframe Here -->
-                <iframe id="JotFormIFrame-240323093843351"
-                        title="Wedding Gifts Registry" onload="window.parent.scrollTo(0,0)"
-                        allowtransparency="true"
-                        allowfullscreen="true"
-                        allow="geolocation; microphone; camera"
-                        src="https://form.jotform.com/240323093843351"
-                        scrolling="yes"></iframe>
-            </div>
-        </article>
-    </div>
-</section>
+<!--<section id="one" class="wrapper post bg-img" data-bg="frida2.jpg">-->
+<!--    <div class="inner">-->
+<!--        <article class="box">-->
+<!--            <header>-->
+<!--                <h2>Bröllopsregister</h2>-->
+<!--                <p>2024-06-15</p>-->
+<!--            </header>-->
+<!--            <div class="content iframe-container">-->
+<!--                &lt;!&ndash; Embed JotForm Iframe Here &ndash;&gt;-->
+<!--                <iframe id="JotFormIFrame-240323093843351"-->
+<!--                        title="Wedding Gifts Registry" onload="window.parent.scrollTo(0,0)"-->
+<!--                        allowtransparency="true"-->
+<!--                        allowfullscreen="true"-->
+<!--                        allow="geolocation; microphone; camera"-->
+<!--                        src="https://form.jotform.com/240323093843351"-->
+<!--                        style="min-height:600px;">-->
+<!--                </iframe>-->
+<!--            </div>-->
+<!--        </article>-->
+<!--    </div>-->
+<!--</section>-->
 
 
 
